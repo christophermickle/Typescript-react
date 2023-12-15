@@ -1,10 +1,8 @@
 import { type ReactNode } from "react";
 
 export type CourseGoal = {
+  children: ReactNode;
   title: string;
-  children?: ReactNode;
-  id?:number
-  description?:string;
 };
 
 export default function CourseGoal({ title, children }: CourseGoal) {
