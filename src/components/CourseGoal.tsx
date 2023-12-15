@@ -1,11 +1,13 @@
 import { type ReactNode } from "react";
 
-export type CourseGoalProps = {
+export type CourseGoal = {
   title: string;
   children?: ReactNode;
+  id?:number
+  description?:string;
 };
 
-export default function CourseGoal({ title, children }: CourseGoalProps) {
+export default function CourseGoal({ title, children }: CourseGoal) {
   return (
     <article>
       <div>
