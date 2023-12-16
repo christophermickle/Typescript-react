@@ -34,9 +34,8 @@ export default function App() {
       <Header image={{ src: goalsImg, alt: "A list of goals" }}>
         <h1>Your Tasks</h1>
       </Header>
-      <CourseGoalList goals={goals} onDeleteGoal={handleDeleteGoal} />
-
       <NewGoal onAddGoal={handleAddGoal} />
+      <CourseGoalList goals={goals} onDeleteGoal={handleDeleteGoal} />
     </main>
   );
 }

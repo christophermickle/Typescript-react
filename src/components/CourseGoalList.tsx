@@ -18,9 +18,17 @@ export default function CourseGoalList({
   let warningBox: ReactNode;
   if (goals.length >= 4) {
     warningBox = (
-      <InfoBox mode="warning">
+      <InfoBox mode="warning" severity="medium">
         You're collecting a lot of tasks, don't put too much weight on your
         shoulders
+      </InfoBox>
+    );
+  }
+  if (goals.length >= 6) {
+    warningBox = (
+      <InfoBox mode="warning" severity="high">
+        You have died of dyssentery and cannot continue, please delete some
+        tasks and try again.
       </InfoBox>
     );
   }

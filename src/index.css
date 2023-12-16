@@ -10,7 +10,7 @@ html {
 
 body {
   min-height: 100vh;
-  background: linear-gradient(#f0f6f8, #e0e1e7);
+  background: linear-gradient(black, hsl(0, 0%, 20%));
 }
 
 main {
@@ -133,6 +133,7 @@ li button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   font-size: 0.85rem;
   border-radius: 4px;
+  text-wrap: balance;
 }
 
 .infobox-hint {
