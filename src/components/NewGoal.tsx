@@ -15,13 +15,14 @@ function NewGoal({ onAddGoal }: newGoalProps) {
     const enteredSummary = summary.current!.value;
     e.currentTarget!.reset();
     onAddGoal(enteredGoal, enteredSummary);
+    focus();
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <p>
         <label htmlFor="goal">Your Goal</label>
-        <input id="goal" type="text" ref={goal}></input>
+        <input id="goal" type="text" autoFocus ref={goal}></input>
       </p>
       <p>
         <label htmlFor="summary">Short Summary</label>
