@@ -1,4 +1,4 @@
-import { PropsWithChildren, type ReactNode } from "react";
+import { PropsWithChildren } from "react";
 
 type CourseGoalProps = PropsWithChildren<{
   id: number;
